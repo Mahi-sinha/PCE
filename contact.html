@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub1-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+           <p class="para"> Purnea College Of Engineering<br>(Dept. of Science, Technology and Technical Education)</p>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                     <li><a href="About.html">ABOUT</a></li>
+                      <li><a href="course.html">BRANCHES</a></li>
+                       <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="topper.html">TOPPER LIST</a></li>
+                         <li><a href="T&P.html">T & P</a></li>
+                         <li><a href="login branch.php">Login</a></li>
+                
+                </ul>
+            </div>
+           <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!----------------contact---------->
+<section class="location">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.251945655887!2d87.46512087518315!3d25.762240477351618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eff9671d4a42b3%3A0x1e4bb69c1f00afc8!2sPurnea%20College%20of%20Engineering%20(PCE)%2C%20Purnea!5e0!3m2!1sen!2sin!4v1749535290665!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+  <i class="fas fa-home"></i>
+  <span>
+    <h5>At Polytechnic Chowk, Near Ram Nagar & Subhash Nagar</h5>
+    <p>Purnea, Bihar</p>
+  </span>
+</div>
+<div>
+  <i class="fas fa-phone"></i>
+  <span>
+    <h5>06454-226777</h5>
+    <p>Monday to Saturday, 10 AM to 6 PM</p>
+  </span>
+</div>
+<div>
+  <i class="fas fa-envelope"></i>
+  <span>
+    <h5>lucywatson0914@gmail.com</h5>
+    <p>Email Us Your Query</p>
+  </span>
+</div>
+
+    </div>
+    <div class="contact-col">
+       <form action="form-handler.php" method="post">
+        <input type="text" name= "name" placeholder="Enter Your Name" required>
+        <input type="email" name= "email" placeholder="Enter Email Address" required>
+        <input type="text" name= "subject" placeholder="Enter Your Subject" required>
+        <textarea rows="8" name= "message" placeholder="Message"></textarea>
+         <button type="submit" class="hero-btn-red">Send Message</button>
+       </form>
+    </div>
+  </div>
+
+</section>
+
+
+ 
+
+<!---------footer-->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Purnea College Of Engineering<br>At Polytechnic Chowk,Near Ram Nagar & Subhash Nagar</p>
+<div class="icons">
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-twitter"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-linkedin"></i>
+</div>
+<p>Made with <i class="fas fa-heart"></i> by Mahi Sinha</p>
+</section>
+    <!--------java script-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-300px";
+        }
+
+    </script>
+</body>
+</html>

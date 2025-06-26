@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="stle2.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="mech-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+           <p class="para"> Purnea College Of Engineering<br>(Dept. of Science, Technology and Technical Education)</p>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="About.html">ABOUT</a></li>
+                      <li><a href="course.html">BRANCHES</a></li>
+                       <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="topper.html">TOPPER LIST</a></li>
+                         <li><a href="T&P.html">T & P</a></li>
+                         <li><a href="login branch.php">Login</a></li>
+                </ul>
+            </div>
+           <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        
+    </section>
+
+<!----------------content----------->
+
+<!-- Mechanical Engineering Faculty Section -->
+<section class="faculty-section">
+  <h2>Faculty – Department of Mechanical Engineering</h2>
+  <div class="faculty-container">
+
+    <div class="faculty-card">
+      <img src="images/mech hod.png" alt="Prof. Md. Saquib Akhter" />
+      <h3>Prof. Md. Saquib Akhter</h3>
+      <p><strong>Designation:</strong> H.O.D</p>
+      <p><strong>Phone:</strong> 9559022576</p>
+      <p><strong>Email:</strong> saquibmex81@gmail.com</p>
+    </div>
+
+    <div class="faculty-card">
+      <img src="images/ratnesh sir.png" alt="Prof. Ratnesh Kumar" />
+      <h3>Prof. Ratnesh Kumar</h3>
+      <p><strong>Designation:</strong> Assistant Professor</p>
+      <p><strong>Phone:</strong> 8406061934</p>
+      <p><strong>Email:</strong> ratnesh.kumar06342@gmail.com</p>
+    </div>
+
+    <div class="faculty-card">
+      <img src="images/ram_chandra_sahni.jpg" alt="Prof. Ram Chandra Sahni" />
+      <h3>Prof. Ram Chandra Sahni</h3>
+      <p><strong>Designation:</strong> Assistant Professor</p>
+      <p><strong>Phone:</strong> 8228007976</p>
+      <p><strong>Email:</strong> rcsahani@gmail.com</p>
+    </div>
+
+    <div class="faculty-card">
+      <img src="images/uday sir.png" alt="Prof. Uday Kumar Singh" />
+      <h3>Prof. Uday Kumar Singh</h3>
+      <p><strong>Designation:</strong> Assistant Professor</p>
+      <p><strong>Phone:</strong> 7033063539</p>
+      <p><strong>Email:</strong> udaykumar0091@gmail.com</p>
+    </div>
+
+    <div class="faculty-card">
+      <img src="images/khushboo_anand.jpg" alt="Prof. Khushboo Anand" />
+      <h3>Prof. Khushboo Anand</h3>
+      <p><strong>Designation:</strong> Assistant Professor</p>
+      <p><strong>Phone:</strong> 8789632264</p>
+      <p><strong>Email:</strong> khushbooanand994@gmail.com</p>
+    </div>
+
+    <div class="faculty-card">
+      <img src="images/payal_priya.jpg" alt="Prof. Payal Priya" />
+      <h3>Prof. Payal Priya</h3>
+      <p><strong>Designation:</strong> Assistant Professor</p>
+      <p><strong>Phone:</strong> 8789131303</p>
+      <p><strong>Email:</strong> writeme.payal@gmail.com</p>
+    </div>
+
+    <div class="faculty-card">
+      <img src="images/ahad_noor.jpg" alt="Prof. Ahad Noor" />
+      <h3>Prof. Ahad Noor</h3>
+      <p><strong>Designation:</strong> Assistant Professor</p>
+      <p><strong>Phone:</strong> 9101247470</p>
+      <p><strong>Email:</strong> ahad.1031@gmail.com</p>
+    </div>
+
+    <div class="faculty-card">
+      <img src="images/ravi_anand.jpg" alt="Prof. Ravi Anand" />
+      <h3>Prof. Ravi Anand</h3>
+      <p><strong>Designation:</strong> Assistant Professor</p>
+      <p><strong>Phone:</strong> 8861225541</p>
+      <p><strong>Email:</strong> anandravi2310@gmail.com</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!---------footer-->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Purnea College Of Engineering<br>At Polytechnic Chowk,Near Ram Nagar & Subhash Nagar</p>
+<div class="icons">
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-twitter"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-linkedin"></i>
+</div>
+<p>Made with <i class="fas fa-heart"></i> by Mahi Sinha</p>
+</section>
+    <!--------java script-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-300px";
+        }
+
+    </script>
+</body>
+</html>

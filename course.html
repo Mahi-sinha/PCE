@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub2-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+          <p class="para"> Purnea College Of Engineering<br>(Dept. of Science, Technology and Technical Education)</p>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul> <li><a href="index.html">HOME</a></li>
+                     <li><a href="About.html">ABOUT</a></li>
+                      <li><a href="course.html">BRANCHES</a></li>
+                       <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="topper.html">TOPPER LIST</a></li>
+                         <li><a href="T&P.html">T & P</a></li>
+                         <li><a href="login branch.php">Login</a></li>
+               
+                </ul>
+            </div>
+           <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+          </nav>
+    </section>
+    <!----------------branches---------->
+<section class="course-section" id="courses">
+  <h2>Explore Our Courses</h2>
+  <label for="branchSelect">Choose a branch:</label>
+  <select id="branchSelect" onchange="showBranchDetails()">
+    <option value="">--Select--</option>
+    <option value="cse">Computer Science & Engineering</option>
+    <option value="cse ai">Computer Science & Engineering & AI</option>
+    <option value="ece">Electronics & Communication</option>
+    <option value="me">Mechanical Engineering</option>
+    <option value="mechatronics">Mechatronics Engineering</option>
+    <option value="civil">Civil Engineering</option>
+    <option value="electrical">Electrical Engineering</option>
+  </select>
+
+  <div class="branch-details" id="cse" style="display:none;">
+    <h3>Computer Science & Engineering</h3>
+    <p><a href="about cse.html">About</a>
+    <a href="Fcaulty cse.html">Faculty</a>
+  <a href="student cse.html">Students</a>
+<a href="syllabus cse.html">Syllabus</a>
+<a href="https://results.beup.ac.in/">End Sem Result</a></p>
+  </div>
+  <div class="branch-details" id="cse ai" style="display:none;">
+    <h3>Computer Science & Engineering and ai</h3>
+    <p><a href="about cseai.html">About</a>
+    <a href="Fcaulty cse -ai.html">Faculty</a>
+  <a href="student cse ai.html">Students</a>
+<a href="student cse ai.html">Syllabus</a>
+<a href="https://results.beup.ac.in/">End Sem Result</a></p>
+  </div>
+ 
+  <div class="branch-details" id="ece" style="display:none;">
+    <h3>Electronics & Communication Engineering</h3>
+    <p><a href="about ece.html">About</a>
+    <a href="faculty ece.html">Faculty</a>
+  <a href="student ece.html">Students</a>
+<a href="syllabus ece.html">Syllabus</a>
+<a href="https://results.beup.ac.in/">End Sem Result</a></p>
+  </div>
+
+  <div class="branch-details" id="me" style="display:none;">
+    <h3>Mechanical Engineering</h3>
+    <p><a href="about mech.html">About</a>
+    <a href="faculty mech.html">Faculty</a>
+  <a href="studentmech.html">Students</a>
+<a href="syllabus mechanical.html">Syllabus</a>
+<a href="https://results.beup.ac.in/">End Sem Result</a></p>
+  </div>
+
+  <div class="branch-details" id="mechatronics" style="display:none;">
+    <h3>Mechatronics Engineering</h3>
+    <p><a href="about meachatronics.html">About</a>
+    <a href="faculty mechatronics.html">Faculty</a>
+  <a href="student mechatro.html">Students</a>
+<a href="syllabus mechatronics.html">Syllabus</a>
+<a href="https://results.beup.ac.in/">End Sem Result</a></p>
+  </div>
+
+  <div class="branch-details" id="civil" style="display:none;">
+    <h3>Civil Engineering</h3>
+    <p><a href="about civil.html">About</a>
+    <a href="faculty civil.html">Faculty</a>
+  <a href="student civil.html">Students</a>
+<a href="syllabus civil.html">Syllabus</a>
+<a href="https://results.beup.ac.in/">End Sem Result</a></p>
+  </div>
+
+  <div class="branch-details" id="electrical" style="display:none;">
+    <h3>Electrical Engineering</h3>
+    <p><a href="about electrical.html">About</a>
+    <a href="faculty electrical.html">Faculty</a>
+  <a href="student elect.html">Students</a>
+<a href="syllabus electrical.html">Syllabus</a>
+<a href="https://results.beup.ac.in/">End Sem Result</a></p>
+  </div>
+</section>
+
+
+<!---------footer-->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Purnea College Of Engineering<br>At Polytechnic Chowk,Near Ram Nagar & Subhash Nagar</p>
+<div class="icons">
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-twitter"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-linkedin"></i>
+</div>
+<p>Made with <i class="fas fa-heart"></i> by Mahi Sinha</p>
+</section>
+    <!--------java script-->
+   <script>
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-300px";
+  }
+
+  function showBranchDetails() {
+    const selected = document.getElementById("branchSelect").value;
+    const branches = document.querySelectorAll(".branch-details");
+
+    branches.forEach(branch => {
+      branch.style.display = "none"; // Hide all
+    });
+
+    if (selected) {
+      document.getElementById(selected).style.display = "block"; // Show selected
+    }
+  }
+</script>
+
+</body>
+</html>

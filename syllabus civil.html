@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="stle2.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="civil-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+           <p class="para"> Purnea College Of Engineering<br>(Dept. of Science, Technology and Technical Education)</p>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                      <li><a href="index.html">HOME</a></li>
+                     <li><a href="About.html">ABOUT</a></li>
+                      <li><a href="course.html">BRANCHES</a></li>
+                       <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="topper.html">TOPPER LIST</a></li>
+                         <li><a href="T&P.html">T & P</a></li>
+                         <li><a href="login branch.php">Login</a></li>
+                </ul>
+            </div>
+           <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        
+    </section>
+
+<!----------------content----------->
+<div class="syll">
+<a href="https://docs.google.com/uc?export=download&id=1kQg7FO2r3a2yyZGZ9ThQ9cruxBaSAc5E">First Semester</a>
+<a href="https://docs.google.com/uc?export=download&id=1mtMQm6BFIHb6d7LD_VXGwwARX2TH48tJ">Second Semester</a>
+<a href="https://docs.google.com/uc?export=download&id=1_MCFnRu4--eFk63Kcl3DOVAMmOdTidSu">Third Semester</a>
+<a href="https://docs.google.com/uc?export=download&id=1AxnC52LbSoqMIVA9NZk_dkPsE0LPPNln">Fourth Semester</a>
+<a href="https://docs.google.com/uc?export=download&id=1o0ieHKUGRgFj6lyIfE0k8bD_YccgRsS1">Fiftth Semester</a>
+<a href="https://docs.google.com/uc?export=download&id=199QSq3RHl5imQrwdAY13usQwo-jILtk9">Sixth Semester</a>
+<a href="https://docs.google.com/uc?export=download&id=1l6r73fBntjjMDE3DnoCJ6YOuJKUsOfpG">Seventh Semester</a>
+<a href="#">Eighth Semester</a></div>
+
+
+
+<!---------footer-->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Purnea College Of Engineering<br>At Polytechnic Chowk,Near Ram Nagar & Subhash Nagar</p>
+<div class="icons">
+  <i class="fab fa-facebook"></i>
+  <i class="fab fa-twitter"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-linkedin"></i>
+</div>
+<p>Made with <i class="fas fa-heart"></i> by Mahi Sinha</p>
+</section>
+    <!--------java script-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-300px";
+        }
+
+    </script>
+</body>
+</html>
